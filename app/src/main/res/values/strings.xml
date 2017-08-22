@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">还款结算</string>
+    <string name="month">月份账单</string>
+    <string name="money">元</string>
+
+    <style name="total">共计%d单</style>
+</resources>

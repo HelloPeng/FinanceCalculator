@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_app_title_parent"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height_size"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_app_title_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_app_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_vector_back" />
+
+        <TextView
+            android:id="@+id/tv_app_title_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_app_title_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/title_content_padding"
+        android:paddingRight="@dimen/title_content_padding">
+
+        <TextView
+            android:id="@+id/tv_app_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:textColor="@color/colorAppTitleColor"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_app_title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" />
+
+
+</RelativeLayout>
