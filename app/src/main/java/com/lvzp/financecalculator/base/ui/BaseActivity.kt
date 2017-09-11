@@ -5,6 +5,7 @@ import android.content.Context
 import android.databinding.DataBindingUtil
 import android.databinding.ViewDataBinding
 import android.graphics.drawable.Drawable
+import android.os.Build
 import android.os.Bundle
 import android.support.annotation.DrawableRes
 import android.support.annotation.LayoutRes
@@ -16,6 +17,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import com.lvzp.financecalculator.R
+import com.lvzp.financecalculator.base.mvp.BaseView
 import com.lvzp.statusbarlib.StatusBarCompat
 import com.lvzp.statusbarlib.utils.SystemUtils
 import org.jetbrains.anko.design.snackbar
@@ -23,7 +25,6 @@ import org.jetbrains.anko.find
 import org.jetbrains.anko.imageResource
 import org.jetbrains.anko.textColor
 import www.juyun.net.beedriver.base.mvp.BasePresenter
-import com.lvzp.financecalculator.base.mvp.BaseView
 
 
 /**
@@ -88,6 +89,9 @@ abstract class BaseActivity<D : ViewDataBinding, V : BaseView, P : BasePresenter
         initFieldBeforeMethods()
         initTitle()
         StatusBarCompat.with(this).setupTitleBar(mRlAppTitleParent).init()
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            mRlAppTitleParent?.elevation = 10.toFloat()
+        }
         setupTitle()
         initViews()
     }

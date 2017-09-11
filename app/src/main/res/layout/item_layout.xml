@@ -17,8 +17,8 @@
 
         <ImageView
             android:id="@+id/iv_icon"
-            android:layout_width="22dp"
-            android:layout_height="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:src="@drawable/ic_vector_baidu" />
 
@@ -26,6 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
+            android:layout_marginLeft="8dp"
             android:text="@{orderItem.name}"
             android:textColor="#333" />
 
@@ -39,7 +40,7 @@
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:text="@{orderItem.repayTime}"
-            android:textColor="#333"
+            android:textColor="#888"
             android:textSize="12sp" />
 
         <View

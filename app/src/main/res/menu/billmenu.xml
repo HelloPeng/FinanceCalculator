@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bill_item_baidu"
+        android:icon="@drawable/ic_vector_baidu"
+        android:title="百度钱包"
+        android:titleCondensed="BD" />
+    <item
+        android:id="@+id/bill_item_huabai"
+        android:icon="@drawable/ic_vector_huabai"
+        android:title="蚂蚁花呗"
+        android:titleCondensed="HB" />
+    <item
+        android:id="@+id/bill_item_jd"
+        android:icon="@drawable/ic_vector_jd"
+        android:title="京东金融"
+        android:titleCondensed="JD" />
+    <item
+        android:id="@+id/bill_item_jiebai"
+        android:icon="@drawable/ic_vector_jiebai"
+        android:title="蚂蚁借呗"
+        android:titleCondensed="JB" />
+    <item
+        android:id="@+id/bill_item_jt"
+        android:icon="@drawable/ic_vector_jt"
+        android:title="交通银行"
+        android:titleCondensed="JT" />
+    <item
+        android:id="@+id/bill_item_pingan"
+        android:icon="@drawable/ic_vector_pingan"
+        android:title="平安银行"
+        android:titleCondensed="PA" />
+    <item
+        android:id="@+id/bill_item_xiaomi"
+        android:icon="@drawable/ic_vector_xiaomi"
+        android:title="小米金融"
+        android:titleCondensed="XM" />
+    <item
+        android:id="@+id/bill_item_zhaoshang"
+        android:icon="@drawable/ic_vector_zhaoshang"
+        android:title="招商银行"
+        android:titleCondensed="ZS" />
+    <item
+        android:id="@+id/bill_item_zhongxin"
+        android:icon="@drawable/ic_vector_zhongxin"
+        android:title="中信银行"
+        android:titleCondensed="ZX" />
+</menu>

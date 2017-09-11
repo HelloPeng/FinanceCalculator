@@ -1,5 +1,7 @@
 package com.lvzp.financecalculator.bean
 
+import android.graphics.drawable.Drawable
+
 /**
  * 作者：吕振鹏
  * 创建时间：08月22日
@@ -9,12 +11,12 @@ package com.lvzp.financecalculator.bean
  * 修改时间：
  */
 data class OrderBean(
-        var price: String,
-        var total: String,
-        var month: String,
+        var price: String? = null,
+        var total: String? = null,
+        var month: String? = null,
         var items: List<Items>? = null)
 
-data class Items(var iconRes: Int,
-                 var name: String,
-                 var repayTime: String,
-                 var money: String)
+data class Items(var iconRes: Drawable? = null,
+                 var name: String? = null,
+                 var repayTime: String? = null,
+                 var money: String? = null)
